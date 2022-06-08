@@ -1,0 +1,71 @@
+.zomatoapp
+{
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(255, 251, 247);
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    
+   
+}
+.right-card
+{
+margin-left: 200px;
+margin-top: 50px;
+padding-top: 30px;
+}
+.left-card
+{
+margin-left: 10px;
+margin-top: 50px;
+padding-top: 30px;
+}
+
+.button {
+ 
+    color: grey;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+.button1 {background-color: white;
+width:250px;
+} 
+.button2 {background-color: pink;} /* Blue */
+
+@media (max-width: 1024px) {
+  .zomatoapp{width:998px;height: 450px;}
+  .right-card{margin-right: 100px;}
+    .left-card{margin-left: 10px;}
+  }
+
+  @media (max-width: 768px) {
+    .zomatoapp{height: 430px;}
+    .right-card{margin-right: 100px;}
+    .left-card{margin-left: 10px;}
+    .right-card p{font-size: 15px;margin-right: 100px;}
+    .button1{width:200px}
+    .button2{width:200px;height: 55px} 
+  } 
+  @media (max-width: 425px) {
+    .zomatoapp{height: 500px;}
+    .right-card{margin-right: 200px;}
+    .left-card{margin-left: 100px;}
+    .right-card p{font-size: 15px;margin-right: 100px;}
+    .button1{width:200px}
+    .button2{width:200px;height: 55px} 
+  } 
+  @media (max-width: 425px) {
+    .zomatoapp{height: 600px;width:975px}
+    .right-card{margin-right: 200px;}
+    .left-card{margin-left: 100px;}
+    .right-card p{font-size: 15px;margin-right: 100px;}
+    .button1{width:200px}
+    .button2{width:200px;height: 55px} 
+  } 

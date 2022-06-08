@@ -1,0 +1,129 @@
+.content {
+    width: 60%;
+    padding: 0;
+    margin: 0 auto;
+  }
+  
+  .centerplease {
+    margin: 0 auto;
+ 
+    font-size: 35px;
+    margin-top: 45px;
+    margin-left: 200px;
+    font-weight: bold;
+  }
+  
+  /*Question*/
+  .question {
+    position: relative;
+    border: 2px solid #e7e7e7;
+  
+    margin-left: 10px;
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    width:100%;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 50px;
+  }
+  /*Answer*/
+  .answers {
+    padding: 0px 15px;
+    margin: 5px 0;
+    text-align: justify;
+    margin-left: 10px;
+    width:100%!important;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+    position: relative;
+    opacity: 0;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -o-transition: .3s ease;
+    transition: .3s ease;
+  }
+  
+  .questions:checked ~ .answers{
+    height: auto;
+    opacity: 1;
+    padding: 15px;
+    
+  }
+  #q1 h4{
+    margin-left: 2px;
+    font-weight: normal;
+    font-size: 20px;
+    margin-top: 8px;
+    
+}
+  
+  /*FAQ Toggle*/
+  .plus {
+    position: absolute;
+    margin-left: 100px;
+    z-index: 5;
+    font-size: 2em;
+    line-height: 100%;
+    -webkit-user-select: none;    
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -o-transition: .3s ease;
+    transition: .3s ease;
+  
+  }
+  .questions:checked ~ .plus {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  
+  }
+  
+  .questions {
+    display: none;
+    
+  }
+  #angledown{
+      margin-right: 50px;
+  }
+  @media (max-width: 768px) {
+  .content{
+    margin-left: 80px;
+    width: 90%;
+}
+  }
+  @media (max-width: 768px) {
+    .content{
+      margin-left: 50px;
+      width: 200%;
+  }
+   .centerplease
+   {
+     width:100%;
+   }
+    }
+    @media (max-width: 375px) {
+      .content{
+        margin-left: 100px;
+        width: 200%;
+    }
+     .centerplease
+     {
+       width:120%;
+     }
+      }
+      @media (max-width: 320px) {
+        .content{
+          margin-left: 100px;
+          width: 220%;
+      }
+       .centerplease
+       {
+         width:140%;
+       }
+        }
